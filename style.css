@@ -1,0 +1,56 @@
+:root {
+  --primary-color: rgb(184, 94, 94);
+  --secondary-color: rgb(255, 216, 216);
+  --tirtiary-color: rgb(255, 255, 255);
+}
+
+* {
+  box-sizing: border-box;
+
+  font-size: 1.1rem;
+  border-radius: 0.2rem;
+  font-family: Nunito;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--tirtiary-color);
+}
+
+.container1,
+.container2,
+.container3 {
+  display: flex;
+}
+
+.container1 > *,
+.container2 > *,
+.container3 > * {
+  margin: 0 0 0.5rem 0.5rem;
+  background-color: var(--primary-color);
+  flex-grow: 1;
+  padding: 1rem 1.4rem;
+}
+.inner-container1 {
+  margin-left: 0;
+}
+
+.inner-container1 .container1 > *,
+.inner-container1 .container2 > *,
+.inner-container1 .container3 > * {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* -------------------------------------------------  */
+
+h1 {
+  padding: 3rem;
+  text-align: center;
+  color: rgb(184, 94, 94);
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
